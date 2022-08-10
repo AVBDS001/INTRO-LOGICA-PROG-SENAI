@@ -50,7 +50,7 @@
    
    <li><strong>Tipos de computadores atuais</strong></li>
    <ul>
-      <li><strong>Computadores de usuário</strong> = computadores de baixo nível de processamento, de baixa capacidade, geralmente vêm com um hardware relativamente fraco (low-end)</li>
+      <li><strong>Computadores de usuário</strong> = computadores de baixo nível de processamento, de baixa capacidade, geralmente vêm com um hardware relativamente fraco (low-end).</li>
       <li><strong>Computadores high-end</strong> = computadores com alto nível de processamento, alta capacidade, hardware elevado, um exemplo desses tipos de computadores são os computadores gamers e os computadores de mineradores de bitcoin.</li>
       <li><strong>Computação embarcada</strong> = usado para fazer sensoriamento por exemplo: drones, sensores térmicos.</li>
       <li><strong>Sensores inteligentes</strong> = sensor que executa alguma ação predefinida quando detecta a entrada apropriada.</li>
@@ -61,7 +61,8 @@
    <li><strong>Sistemas operacionais</strong></li>
    <ul>
       <li> É o conjunto de programas que gerenciam recursos, processadores, armazenamento, dispositivos de entrada e saída e dados da máquina e seus periféricos. O sistema que faz comunicação entre o hardware e os demais softwares.</li>
-      <li>O sistema operacional executa coisas do processador</li>
+      <li>O sistema operacional executa operações do processador, o sistema operacional também faz a interface do usuário do processador.</li>
+      <li>Existem vários tipos de sistemas operacionais: como linux, windows, mac OS X etc.</li>
    </ul>
    
    
