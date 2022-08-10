@@ -6,9 +6,8 @@
 <p>Professor: Wellington</p>
 </header>
    
-   <p><a href="https://handbook.college.harvard.edu/files/collegehandbook/files/harvard_college_fields_of_concentration_22_-_23.pdf">link HARVARD</a></p>
-    <p><a href="https://handbook.college.harvard.edu/files/collegehandbook/files/harvard_college_fields_of_concentration_22_-_23.pdf">link Mises</a></p>
-
+   <p><a href="https://handbook.college.harvard.edu/files/collegehandbook/files/harvard_college_fields_of_concentration_22_-_23.pdf">Computer Science Harvard</a></p>
+   
 <section class = "aula1">
 
 <h2>Anotações da segunda aula de fundamentos de TI QUARTA-FEIRA 10/08/2022</h2>
