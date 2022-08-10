@@ -33,10 +33,9 @@
    <ul>
       <li>Vários computadores que se conectam e se comunicam por meio de uma rede de computadores.</li>
       <li>Um exemplo de aparelho que faz isso é o nosso celular, o celular necessita de um grande poder computacional porque ele executa diversas operações em segundo plano, e está praticamente ligado sempre.</li>
-      
-      <br>
-      
    </ul>
+   
+   <br>
    
    <li>Arquitetura de sistemas distribuídos</li>
    <ul>
