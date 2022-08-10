@@ -6,7 +6,7 @@
 <p>Professor: Wellington</p>
 </header>
 
-<section>
+<section class = "aula1">
 
 <h2>Anotações da segunda aula de fundamentos de TI QUARTA-FEIRA 10/08/2022</h2>
 <ul>
@@ -35,6 +35,13 @@
       <li>Um exemplo de aparelho que faz isso é o nosso celular, o celular necessita de um grande poder computacional porque ele executa diversas operações em segundo plano, e está praticamente ligado sempre.</li>
    </ul>
    
+   <li>Arquitetura de sistemas distribuídos</li>
+   <ul>
+      <li>Mainframe = computador de alto desempenho usado para fins de computação em grande escala que exige mais disponibilidade e segurança do que uma máquina menor pode oferecer, geralmente são utilizados como servidores, maquinas de processamento de dados estatísticos etc.</li>
+      <li><strong>Supercomputador</strong> = computador com um alto nível de performance a performance de um supercomputador geralmente é medida em FLOPS ao invés de MIPS. Geralmente esses computadores são utilizados para desempenhar tarefas específicas, existem supercomputadores que são aplicados a astrofísica, modelos estatísticos computacionais e etc.</li>
+      <li><strong>Clusters</strong> = conjunto de computadores que operam de forma conjunta e que podem se unir de forma que sejam vistos como um sistema único. Geralmente os clusters estão conectados em uma LAN (rede local) com os seus nós ligados entre si.</li>
+   </ul>
+   
    <br>
    
    <li>Tipos de computadores atuais</li>
@@ -46,9 +53,10 @@
    </ul>
    
    
+   
 </ul>
 
-</section>
+</section class = "aula1">
 
 
 </body>
