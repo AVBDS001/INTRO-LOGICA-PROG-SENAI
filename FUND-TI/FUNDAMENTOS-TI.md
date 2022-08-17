@@ -54,10 +54,14 @@
    </ul>
 </ul>
 </section class = "aula1">
+<hr>   
 <section class = "aula2">
 <h2>AULA 2 FUNDAMENTOS TI 17/08/2022</h2>
 <ul>
    <li><strong>SISTEMAS OPERACIONAIS</strong></li>
+   <ul>
+      <li></li>
+   </ul>
 </ul>
 </section>   
 
