@@ -5,6 +5,12 @@ using namespace std;
 
 int idade;
 void classificar(int idade) {
+	
+	
+	while (idade <= 0) {
+	cout<<"VALOR INVALIDO DIGITE SUA IDADE NOVAMENTE: ";
+	cin>>idade;
+	}
 	if (idade >= 1 && idade <= 5) {
 		cout<<"Infantil"<<endl;
 	}
@@ -26,16 +32,19 @@ void classificar(int idade) {
 }
 
 int main() {
-	cout<<"Insira a sua idade"<<endl;
+	cout<<"Insira a sua idade: ";
 	cin>>idade;
-	while (idade <= 0) {
-		cout<<"VALOR INVALIDO DIGITE NOVAMENTE"<<endl;
-		cin>>idade;
-	}
+	cout<<"\n";
 	char resposta;
 	while (resposta != 'S') {
 		classificar(idade);
 		cout<<"DESEJA SAIR DO PROGRAMA (Digite --> S para sair/Digite --> N para ficar): "<<endl;
-		cin>>resposta;	
+		cin>>resposta;
+		if (resposta == 'S') {
+			break;
+		}
+		cout<<"Insira a sua idade: ";
+		cin>>idade;
+		cout<<"\n";
 	}
 }
