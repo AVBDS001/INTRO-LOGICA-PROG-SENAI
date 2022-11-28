@@ -20,6 +20,7 @@ struct Cliente {
 		
 		for (int i = 0; i < qtdClientes; i++) {
 			if (cliente[i].idCliente == 0) {
+				//necessario resolver como gerar numeros aleatorios
 				cliente[i].idCliente = rand();
 				cout<<"\n";
 				
@@ -55,18 +56,19 @@ struct Cliente {
 		Funcionario funcionario[qtdFuncionarios] = {0};
 		for (int i = 0; i < qtdFuncionarios; i++) {
 			if (funcionario[i].idFuncionario == 0) {
+				//necessario resolver como gerar numeros aleatorios
 				funcionario[i].idFuncionario = rand();
 				cout<<"\n";
 				
-				cout<<"Insira o nome do cliente: ";
+				cout<<"Insira o nome do funcionario: ";
 				cin>>funcionario[i].nomeFuncionario;
 				cout<<"\n";
 				
-				cout<<"Insira o telefone do cliente nesse formato (71994542843): ";
+				cout<<"Insira o telefone do funcionario nesse formato (71994542843): ";
 				cin>>funcionario[i].telefoneFuncionario;
 				cout<<"\n";
 				
-				cout<<"Insira o CPF do cliente nesse formato (02069941594): ";
+				cout<<"Insira o CPF do funcionario nesse formato (02069941594): ";
 				cin>>funcionario[i].cpfFuncionario;
 				cout<<"\n";
 			}
@@ -79,8 +81,6 @@ struct Cliente {
 		int qtdProduto;
 		int valorProduto;	
 	};
-	
-		
 	
 	struct Venda {
 		int id_venda;
@@ -140,7 +140,6 @@ int main() {
 			   			addFuncionario();
 			   			break;
 			   		case 3:
-			   			exibir();
 			   			break;
 			   }
 			break;
