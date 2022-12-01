@@ -1,149 +1,170 @@
 #include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
 using namespace std;
 
+void menuPrincipal() {
+	cout<<"Menu principal"<<endl;
+	cout<<"1-Cadastros"<<endl;
+	cout<<"2-Vendas"<<endl;
+	cout<<"3-Relatorios"<<endl;
+	cout<<"4-Sair"<<endl;
+}
+
+void menuCadastro() {
+	cout<<"Menu cadastro"<<endl;
+	cout<<"1-Cadastrar cliente"<<endl;
+	cout<<"2-Cadastrar funcionario"<<endl;
+	cout<<"3-Cadastrar produto"<<endl;
+	cout<<"4-Voltar para o menu principal"<<endl;
+}
+
+void menuRelatorios() {
+	cout<<"Menu cadastro"<<endl;
+	cout<<"1-Exibir a maior venda"<<endl;
+	cout<<"2-Exibir o total de todas as vendas"<<endl;
+	cout<<"3-Exibir a venda de um cliente especifico"<<endl;
+	cout<<"4-Exibir todas as vendas de um funcionario"<<endl;
+}
+
 struct Cliente {
-		int idCliente;
-		string nomeCliente;
-		string telefoneCliente;
-		string cpfCliente;
-	};
+	int id;
+	string nome;
+	string telefone;
+	string cpf;
+};
+
+void cadastrarCliente() {
+	int clientesSize;
+	cout<<"Insira quantos clientes serao cadastrados: ";
+	cin>>clientesSize;
+	cout<<"\n";
 	
-	void addCliente() {
-		int qtdClientes;	
-		cout<<"Insira quantos clientes voce ira cadastrar: ";
-		cin>>qtdClientes;
-		cout<<"\n";
-		
-		Cliente cliente[qtdClientes] = {0};
-		
-		for (int i = 0; i < qtdClientes; i++) {
-			if (cliente[i].idCliente == 0) {
-				//necessario resolver como gerar numeros aleatorios
-				cliente[i].idCliente = rand();
-				cout<<"\n";
-				
-				cout<<"Insira o nome do cliente: ";
-				cin>>cliente[i].nomeCliente;
-				cout<<"\n";
-				
-				cout<<"Insira o telefone do cliente nesse formato (71994542843): ";
-				cin>>cliente[i].telefoneCliente;
-				cout<<"\n";
-				
-				cout<<"Insira o CPF do cliente nesse formato (02069941594): ";
-				cin>>cliente[i].cpfCliente;
-				cout<<"\n";
-			}
-		}
-		
-	}
-		
-	struct Funcionario {
-		int idFuncionario;
-		string nomeFuncionario;
-		string telefoneFuncionario;
-		string cpfFuncionario;
-	};
+	Cliente clientes[clientesSize] = {0};
 	
-	void addFuncionario() {
-		int qtdFuncionarios;	
-		cout<<"Insira quantos funcionarios voce ira cadastrar: ";
-		cin>>qtdFuncionarios;
-		cout<<"\n";
-		
-		Funcionario funcionario[qtdFuncionarios] = {0};
-		for (int i = 0; i < qtdFuncionarios; i++) {
-			if (funcionario[i].idFuncionario == 0) {
-				//necessario resolver como gerar numeros aleatorios
-				funcionario[i].idFuncionario = rand();
-				cout<<"\n";
-				
-				cout<<"Insira o nome do funcionario: ";
-				cin>>funcionario[i].nomeFuncionario;
-				cout<<"\n";
-				
-				cout<<"Insira o telefone do funcionario nesse formato (71994542843): ";
-				cin>>funcionario[i].telefoneFuncionario;
-				cout<<"\n";
-				
-				cout<<"Insira o CPF do funcionario nesse formato (02069941594): ";
-				cin>>funcionario[i].cpfFuncionario;
-				cout<<"\n";
-			}
+	for (int i = 0; i < clientesSize; i++) {
+		if (clientes[i].id == 0) {
+			cout<<"Insira o ID do cliente "<<i+1<<" : ";
+			cin>>clientes[i].id;
+			cout<<"\n";
+			
+			cout<<"Insira o nome do cliente "<<i+1<<" : ";
+			cin>>clientes[i].nome;
+			cout<<"\n";
+			
+			cout<<"Insira o telefone do cliente "<<i+1<<" : ";
+			cin>>clientes[i].telefone;
+			cout<<"\n";
+			
+			cout<<"Insira o CPF do cliente "<<i+1<<" : ";
+			cin>>clientes[i].cpf;
+			cout<<"\n";
 		}
 	}
+}
+
+struct Funcionario {
+	int id;
+	string nome;
+	string telefone;
+	string cpf;
+};
+
+void cadastrarFuncionario() {
+	int funcionariosSize;
+	cout<<"Insira quantos funcionarios serao cadastrados: ";
+	cin>>funcionariosSize;
+	cout<<"\n";
 	
-	struct Produto {
-		int idProduto;
-		string nomeProduto;
-		int qtdProduto;
-		int valorProduto;	
-	};
+	Funcionario funcionarios[funcionariosSize] = {0};
 	
-	struct Venda {
-		int id_venda;
-		int id_cliente;
-		int id_funcionario;
-		int id_produto;
-		int qtdVendas;
-		string data_saida;
-	};
-	
-	void menuPrincipal() {
-		cout<<"Menu principal"<<endl;
-		cout<<"1 - Cadastros"<<endl;
-		cout<<"2 - Vendas"<<endl;
-		cout<<"3 - Relatorios"<<endl;
-		cout<<"4 - Sair"<<endl;
+	for (int i = 0; i < funcionariosSize; i++) {
+		if (funcionarios[i].id == 0) {
+			cout<<"Insira o ID do funcionario "<<i+1<<" : ";
+			cin>>funcionarios[i].id;
+			cout<<"\n";
+			
+			cout<<"Insira o nome do funcionario "<<i+1<<" : ";
+			cin>>funcionarios[i].nome;
+			cout<<"\n";
+			
+			cout<<"Insira o telefone do funcionario "<<i+1<<" : ";
+			cin>>funcionarios[i].telefone;
+			cout<<"\n";
+			
+			cout<<"Insira o CPF do funcionario "<<i+1<<" : ";
+			cin>>funcionarios[i].cpf;
+			cout<<"\n";
+		}
 	}
+}
+
+struct Produto {
+	int id;
+	string nome;
+	int qtd;
+	double valor;	
+};
+
+void cadastrarProduto() {
+	int produtosSize;
+	cout<<"Insira quantos produtos serao cadastrados: ";
+	cin>>produtosSize;
+	cout<<"\n";
 	
-	void menuCadastro() {
-		cout<<"Menu Cadastro"<<endl;
-		cout<<"1 - Cadastrar cliente"<<endl;
-		cout<<"2 - Cadastrar funcionario"<<endl;
-		cout<<"3 - Cadastrar produto"<<endl;
-		cout<<"4 - Voltar para o menu principal"<<endl;
-	}
+	Produto produtos[produtosSize] = {0};
 	
-	void menuRelatorios() {
-		cout<<"1 - Exibir a maior venda"<<endl;
-		cout<<"2 - Exibir o total de todas as vendas"<<endl;
-		cout<<"3 - Exibir a venda de um cliente (inserir CPF)"<<endl;
-		cout<<"4 - Exibir todas as vendas de um funcionario (inserir CPF)"<<endl;
+	for (int i = 0; i < produtosSize; i++) {
+		
+		if (produtos[i].id == 0) {
+			cout<<"Insira o ID do produto "<<i+1<<" : ";
+			cin>>produtos[i].id;
+			cout<<"\n";
+			
+			cout<<"Insira o nome do produto "<<i+1<<" : ";
+			cin>>produtos[i].nome;
+			cout<<"\n";
+			
+			cout<<"Insira quantos produtos "<<i+1<<" serao cadastrados: ";
+			cin>>produtos[i].qtd;
+			cout<<"\n";
+		
+			cout<<"Insira o preco do produto "<<i+1<<" : ";
+			cin>>produtos[i].valor;
+			cout<<"\n";
+		}
 	}
+}
 
 int main() {
-	int opPrincipal = 0;
-	int opCadastro = 0;
-	while (opPrincipal != 4) {
+	int op = 0;
+	while(op != 4) {
 		menuPrincipal();
-		cout<<"Insira uma opcao: ";
-		cin>>opPrincipal;
+		cout<<"Insira uma opcao do menu: ";
+  		cin>>op;
 		cout<<"\n";
-		break;
-	}
-	
-	switch(opPrincipal) 
-	{
-		case 1:
-			menuCadastro();
-			cout<<"Insira uma opcao: ";
-			cin>>opCadastro;
-			cout<<"\n";
-			   switch (opCadastro) {
-			   		case 1:
-			   			addCliente();
-			   			break;
-			   		case 2:
-			   			addFuncionario();
-			   			break;
-			   		case 3:
-			   			break;
-			   }
-			break;
-	}
 		
-	return 0;
+		if (op == 1) {
+			int opCadastro = 0;
+			while(opCadastro != 4) {
+				menuCadastro();
+				cout<<"Insira uma opcao do menu: ";
+				cin>>opCadastro;
+				cout<<"\n";
+			
+				switch(opCadastro) {
+					case 1:
+						cadastrarCliente();
+						break;
+				
+					case 2:
+						cadastrarFuncionario();
+						break;
+					
+					case 3:
+						cadastrarProduto();
+						break;
+				}	
+			}
+		} 	
+	}
+	return 0;	
 }
