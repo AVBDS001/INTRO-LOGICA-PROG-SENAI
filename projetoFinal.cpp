@@ -328,7 +328,7 @@ int main() {
             int codigoDaVenda = 0;
             if (clientes[0].id == 0 && produtos[0].id == 0 && funcionarios[0].id == 0) {
                     cout<<"ERRO: NECESSARIO CADASTRAR OS DADOS DO CLIENTE, DOS FUNCIONARIOS, E DOS PRODUTOS PARA CHECAR OS RELATORIOS"<<endl;
-                    cout<<"PRESSIONE 5 PARA RETORNAR AO MENU PRINCIPAL: ";
+                    cout<<"PRESSIONE 4 PARA RETORNAR AO MENU PRINCIPAL: ";
                     cin>>opMenuRelatorios;
                     cout<<"\n";
                 }
